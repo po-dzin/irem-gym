@@ -859,14 +859,14 @@ text-align:center;
 @media (max-width: 768px) {
 	.footer-content {
 		display: flex;
-   		flex-direction: column;     /* було не задано -> тому лишався ряд */
-    	align-items: center;        /* центруємо секції */
+   		flex-direction: column;
+    	align-items: center;
     	text-align: center;
 		gap: 16px;
   	}
 
 	.footer {
-    padding-bottom: 140px;
+    	padding-bottom: 40px;
     }
 
 	.footer-section {
@@ -874,10 +874,9 @@ text-align:center;
     	margin-bottom: 0;
   	}
 
- 	.footer-left {
+ 	#footer-left {
     	flex-direction: column;
 		align-items: center;
-    	min-width: 0;
 		gap: 12px;
   	}
 
@@ -890,14 +889,14 @@ text-align:center;
  	}	
 	
   	.footer-logo-payments {
-    	justify-content: center;
-		margin-left: 0;
+    	flex-direction: column;
+    	align-items: center;
+    	gap: 10px;
   	}
 
 	.footer #footer-right .item {
    		display: flex;
     	justify-content: center;
-    	flex-wrap: wrap;
     	gap: 12px;
     	margin-top: 10px;
   	}
@@ -910,9 +909,7 @@ text-align:center;
   	.footer #footer-right .item img {
     	width: 28px;      /* подбери: 24–32px */
     	height: 28px;
-    	object-fit: contain;
     	display: block;
-		margin-bottom: 0;
   	}
 }
 
