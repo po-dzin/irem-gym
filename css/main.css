@@ -822,21 +822,100 @@ position: absolute;
    margin-bottom: 30px;
 }
 
-#footercenter {
+#footer-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 260px;
+}
+
+#footer-center {
 text-align:center;
 .a {
   color:inherit;
 }
 }
-#footercenter a{
 
+#footer-center a{
   color:inherit;
-
 }
-#footerright {
+
+#footer-right {
   text-align:end;
 }
 
+.footer-logo-payments {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 20px;
+}
+
+.footer-logo-payments img {
+  height: 80px;
+  width: auto;
+  margin: 0px;
+}
+
+@media (max-width: 768px) {
+	.footer-content {
+		display: flex;
+   		flex-direction: column;     /* було не задано -> тому лишався ряд */
+    	align-items: center;        /* центруємо секції */
+    	text-align: center;
+		gap: 16px;
+  	}
+
+	.footer {
+    padding-bottom: 140px;
+    }
+
+	.footer-section {
+    	width: auto;
+    	margin-bottom: 0;
+  	}
+
+ 	.footer-left {
+    	flex-direction: column;
+		align-items: center;
+    	min-width: 0;
+		gap: 12px;
+  	}
+
+ 	#footer-center {
+    	text-align: center;
+  	}
+
+ 	#footer-right {
+		text-align: center;
+ 	}	
+	
+  	.footer-logo-payments {
+    	justify-content: center;
+		margin-left: 0;
+  	}
+
+	.footer #footer-right .item {
+   		display: flex;
+    	justify-content: center;
+    	flex-wrap: wrap;
+    	gap: 12px;
+    	margin-top: 10px;
+  	}
+	
+  	.footer #footer-right .item a {
+    	display: inline-flex;
+    	align-items: center;
+  	}
+
+  	.footer #footer-right .item img {
+    	width: 28px;      /* подбери: 24–32px */
+    	height: 28px;
+    	object-fit: contain;
+    	display: block;
+		margin-bottom: 0;
+  	}
+}
 
 .box-modal iframe{
   width: 100%;
