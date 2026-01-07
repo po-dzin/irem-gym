@@ -783,6 +783,7 @@ position: absolute;
     /* flex-wrap: wrap;*/
     justify-content: space-between;
     margin-bottom: 23px;
+	align-items: center;
 }
 
 .footer-section {
