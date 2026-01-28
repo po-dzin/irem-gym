@@ -16,7 +16,10 @@ $(".openModal").click(function(e) {
   }
 
   // 3) открываем оплату
-  const payUrl = 'https://secure.wayforpay.com/button/b2172af6c3c8a';
+  const API_BASE = "https://centerway-backend.vercel.app"; // твой vercel backend
+  const PRODUCT_CODE = "irem";
+
+  const payUrl = `${API_BASE}/api/pay/start?product=${encodeURIComponent(PRODUCT_CODE)}`;
   window.location.href = payUrl;
 });
 
